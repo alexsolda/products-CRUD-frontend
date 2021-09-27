@@ -146,16 +146,12 @@ export function EditProduct() {
           <br />
           <br />
           <FormLabel color="gray.900">Preço:</FormLabel>
-          <NumberInput color="gray.900" value={price}>
+          <NumberInput color="gray.900" value={price} precision={2} step={0.1}>
             <NumberInputField
               bg="white.50"
               onChange={(e) => setPrice(e.target.value)}
               required
             />
-            <NumberInputStepper>
-              <NumberIncrementStepper />
-              <NumberDecrementStepper />
-            </NumberInputStepper>
           </NumberInput>
           <br />
           <br />
